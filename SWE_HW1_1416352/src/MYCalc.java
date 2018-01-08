@@ -25,9 +25,19 @@ public class MYCalc {
 				System.out.print("number2 : ");
 				number2 = scan.nextInt();
 			}
+			
+			if(inserted_menu==1){
+				int add_result = Add(number1, number2);
+				System.out.print(add_result);
+			}
 		}while(inserted_menu!=4);
 		
 		System.out.print("\r");
+	}
+	
+
+	static int Add(int number1, int number2) {
+		return number1 + number2;
 	}
 
 }
