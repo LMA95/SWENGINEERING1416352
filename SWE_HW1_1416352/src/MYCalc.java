@@ -32,6 +32,9 @@ public class MYCalc {
 			}else if(inserted_menu==2){
 				int subtract_result = Subtract(number1, number2);
 				System.out.print(subtract_result);
+			}else if(inserted_menu==3){
+				int multiply_result = Multiply(number1, number2);
+				System.out.print(multiply_result);
 			}
 		}while(inserted_menu!=4);
 		
@@ -46,5 +49,10 @@ public class MYCalc {
 	static int Subtract(int number1, int number2) {
 		return number1 - number2;
 	}
+	
+	static int Multiply(int number1, int number2){
+		return number1*number2;
+	}
+
 
 }
